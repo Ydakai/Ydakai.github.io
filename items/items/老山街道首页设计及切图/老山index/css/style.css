@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+/*======== 全局 ========*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; border:none;}
+body { font-size:12px; color:#666; font-family:Verdana, Microsoft YaHei, Simsun; background:#fff; line-height:24px; }
+fieldset, img { border:0; }
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+em { font-style:normal; }
+input, button, select, textarea { border:none; outline:none; } 
+textarea { resize:none; } /*禁用了文本的拖拉，尤其在谷歌下*/
+p{ text-align:justify; text-justify:distribute;} /*为了使文本段落左右两边对齐*/
+/*======== Link ========*/
+a { color: #333; text-decoration:none; }
+a:hover { color: #2273c4; text-decoration:none; }
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+
+.f_l{ float:left;}
+.f_r{ float:right;}  
+
+
+
+/*头部*/
+.public_header{ width:100%; height:32px; background:#303030;}
+.wrap{ width:1190px; height:32px; margin:0 auto;}
+.day{ color:#fff;float: left;line-height: 32px;}
+.header p b{float: left;margin-right: 15px;}
+.scroll{float: left;line-height: 32px;width: 445px;height: 32px; margin-left:20px; color:#fff;}
+
+.header{ width:100%; height:200px; background:url(../images/header_bg.jpg) no-repeat center center;}
+.header .header_logo{ width:1190px; height:145px; margin:0 auto; padding-top:55px;}
+/*导航*/
+.nav_wrap{ width:100%; height:45px; background:#3d92e4; position:relative; z-index:10;}
+.nav{ width:1190px; height:45px; margin:0 auto;}
+.nav li{ float:left; width:120px; height:45px; text-align:center; background:#3d92e4;}
+.nav li.cur{background:#2273c4; }
+.nav li:hover{ background:#2273c4;}
+.nav li a{ display:inline-block; width:120px; height:45px; font-size:16px; color:#fff;line-height:45px;}
+.nav .m_ul{ overflow:hidden; display:none;}
+.nav .m_ul li{ width:100%; height:40px; border-bottom:1px solid #fff;}
+.nav .m_ul li a{ width:100%; height:40px; line-height:40px; text-align:center; background:#3d92e4;}
+.nav .m_ul li a:hover{ background:#2273c4;}
+
+/*main*/
+/*banner*/
+.main{ width:1190px; height:auto; margin:20px auto;}
+.main01{ width:100%; height:auto; overflow:hidden;}
+.banner{ width:630px; height:360px; border:1px solid #dedede; position:relative; overflow:hidden;}
+.banner ul{ width:4000px; height:360px; position:relative;}
+.banner ul li{ width:630px; height:360px; float:left; position:relative;}
+.shadow_wrap{ width:100%; height:40px; line-height:40px; font-size:16px; color:#fff; position:absolute; bottom:0; left:0; text-indent:2em;}
+.shadow{ width:100%; height:100%; background:#000;filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5; opacity: 0.5;}
+.shadow_con{ width:450px; height:100%; position:absolute; left:0; top:0; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.banner ol{ position:absolute; z-index:2; right:10px; bottom:10px;}
+.banner ol li{width: 20px; height: 20px; border:1px solid #fff; float:left; margin: 0 0 0 10px; text-align:center; background: #333; color: #999; cursor: pointer;}
+.banner ol li.current{ border:1px solid #f60; color:#f60; }
+/*资讯*/
+.new{ width:510px; height:340px; border:1px solid #dedede; padding:10px 15px;}
+.new_title{ overflow:hidden; border-bottom:1px solid #dedede;}
+.new_title h4{ float:left; padding: 0 10px;   height:40px; line-height:40px; font-size:18px; font-weight:700; color:#2273c4; border-bottom:1px solid #2273c4;}
+.more{ float:right; color:#999; line-height:40px;}
+.dongtai_content{ clear:both;}
+.dongtai_content ul li{ width:470px; height:40px; line-height:40px; padding-left:20px; background:url(../images/dian_5.png) no-repeat left center;}
+.dongtai_content ul li a{ float:left; width:380px; font-size:14px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.dongtai_content ul li span{ float:right; color:#999;}
+/*图片专题*/
+.zhuanti{ width:1148px; height:auto; border:1px solid #dedede; background:#fff; margin:20px 0; padding: 0 20px;}
+.zhuanti .zt_pic{ overflow:hidden; margin:10px 0;}
+.zhuanti .zt_pic li{ float:left; width:180px; height:100px; margin-right:11px;}
+/*动态*/
+.main03{ width:100%; height:300px;}
+.zw{ width:490px; height:280px; border:1px solid #dedede; padding:10px 15px;}
+.tab_new{ width:630px; height:300px; border:1px solid #dedede; padding:0px 0 0  15px;}
+.tab_new .tab_con{ width:560px; height:auto;}
+.tab_new .tab_con .dongtai_content{ display:none; margin-top:10px;}
+.tab_new .tab{ width:40px; height:300px;}
+.tab_new .tab ul li{ width:40px; height:98px; border-top:2px solid #8e8c8d; background:#716f70;}
+.tab_new .tab ul li.curr{ background:#b01f24}
+.tab_new .tab ul li a{ float:left; width:20px; line-height:20px; font-size:14px; color:#fff; font-weight:700; padding:10px; text-align:center;}
+
+/*公共服务*/
+.main04{ margin:20px 0; overflow:hidden;}
+.main04 .fw{ width: 490px; height:325px; border:1px solid #dedede; padding:10px 15px; margin-right:20px;}
+.icon{ padding:30px 20px; clear:both; overflow:hidden;}
+.icon dl{ width:70px; height:130px; }
+.icon dl dd{ font-size:14px; width:70px; height:45px; line-height:45px; text-align:center;}
+.icon a{ float:left; margin:0 35px;}
+/*所辖社区*/
+.sq{ width:370px; height:325px; border:1px solid #dedede; padding:10px 15px; margin-right:20px;}
+.sq ul li{ float:left; width:180px; height:34px; line-height:34px; font-size:14px; }
+.sq ul li .xj{ vertical-align:middle; }
+.sq ul li span{ width:21px; height:25px;margin-right:5px; display:inline-block; }
+/*hudong*/
+.hudong_icon{ width:224px; height:345px; border:1px solid #dedede;}
+.hudong_icon li{ width:224px; height:89px;}
+
+/*社区特色*/
+.tese{ width:1148px; height:auto; border:1px solid #dedede; padding:0px 20px 10px 20px; margin:20px 0;} 
+.roll_box{ clear:both; overflow:hidden; margin-top:10px;}
+.roll_box .pic{ width:215px;float:left;text-align:center;padding-right:14px;}
+.roll_box .pic img{display:block;margin:0 auto;}
+
+/*网站导航*/
+.lianjie{ height:70px; width:1148px; border:1px solid #dedede; margin:20px 0; padding:0 20px;} 
+.lianjie h4{ float:left; font-size:18px; color:#2273c4; font-weight:700; line-height:70px;}
+.lianjie select{ width:260px; height:30px; line-height:30px; border:1px solid #dedede; margin-left:40px; margin-top:20px;}
+.lianjie select option{ width:100%; height:40px;}
+/*版权信息*/
+.footer_wrap{ width:100%; height:150px; background:#f0f0f0; border-top:2px solid #2273c4;}
+.footer{ width:1190px; height:130px; margin:0 auto; padding-top:20px;}
+.footer p{ height:40px; line-height:40px; text-align:center;}
+.footer p a{ color:#2273c4;}
+
+/*二维码*/
+.float_wrapper{position: fixed;top: 400px;left: 0;right: 0;width: 1290px;margin:0 auto;z-index: 10;}
+.float_content{position: absolute;right: 0px;}
+.float_item{width: 40px;height: 40px;margin-bottom: 6px;background-color: #bfbfbf;}
+#float_weixin{background: #bfbfbf url(../images/weixin.jpg) no-repeat;}
+#float_weixin:hover{background: #1ab826 url(../images/weixin_bover.jpg) no-repeat;}
+#float_weixin .weixin_code,#float_app .app_code{display: none;padding: 20px;background-color: #fff;position: absolute;right: 45px;top: 0;border: #cacdd1 1px solid;text-align: center;}
+.float_item img{width: 172px;height: 172px;}
+.float_item p{height: 44px;font: normal 16px/22px 'microsoft yahei';margin-top: 10px; background: #fff; text-align:center;}
+#float_weixin:hover .weixin_code,#float_app:hover .app_code{display: block;}
+#float_app{background: #bfbfbf url(../images/app.jpg) no-repeat;}
+#float_app:hover{background: #3d92e4 url(../images/app_hover.jpg) no-repeat;}
+#go_top{cursor: pointer;background: #bfbfbf url(../images/top.jpg) no-repeat; display:none;} 

@@ -1,0 +1,358 @@
+/* 
+* @Author: Marte
+* @Date:   2017-07-04 12:08:20
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-07-04 19:30:41
+*/
+/*======== 全局 ========*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; }
+body { font-size:14px; color:#666; font-family:Verdana, Microsoft YaHei, Simsun; background:#fff; line-height:24px; }
+fieldset, img { border:0; }
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+em { font-style:normal; }
+input, button, select, textarea { outline:none; } 
+textarea { resize:none; } /*//禁用了文本的拖拉，尤其在谷歌下*/
+p{ text-align:justify; text-justify:distribute;} /*//为了使文本段落左右两边对齐*/
+
+/*======== Link ========*/
+a{ color: #666; text-decoration: none;}
+a:hover { color: #e02520; text-decoration:none; }
+.main_color{ color:#e02520;}
+
+/*头部通栏*/
+.header_warp{
+    width: 100%;
+    height: 30px;
+    background: #e02520;
+}
+.header_warp .public_header{
+    width: 1200px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    color: #fff;
+}
+.header_warp .public_header .limit{
+    float: left;
+    width: 450px;
+    height: 30px;
+    line-height: 30px;
+}
+.header_warp .public_header .limit span{
+    display: inline-block;
+    width: 15px;
+    text-align: center;
+    color: #edf11b;
+}
+.header_warp .public_header .weather{
+    float: left;
+    width: 450px;
+    height: 30px;
+}
+.header_warp .public_header .login_box{
+    height: 30px;
+    float: right;
+}
+.header_warp .public_header .login_box a{
+    color:#fff;
+    text-decoration:none; 
+}
+.header_warp .public_header .login_box a:hover{
+    color:#edf11b;
+}
+/*logo*/
+.logo{
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;    
+}
+.logo a{
+    float: left;
+    width: 400px;
+    height: 0px;
+    padding-top: 90px;
+    background: url(../images/logo.png) no-repeat left center;
+    overflow: hidden;
+}
+/*导航*/
+.nav{
+    width: 1200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    background: url(../images/nav_bg.png) no-repeat left center;
+}
+.nav ul {
+    padding-left: 50px;
+}
+.nav ul li {
+    float: left;
+
+}
+.nav ul li a{
+    display: block;
+    width: 130px;
+    height: 40px;
+    padding-left: 10px;
+    background: url(../images/li_bg_gray.png) no-repeat left center;
+    text-decoration:none; 
+    font-size: 18px;
+    color: #666;
+}
+.nav ul li .active{
+    color:#e02520;
+    background: url(../images/li_bg_red.png) no-repeat left center;
+}
+/*大图*/
+.big_image{
+    width: 1200px;
+    height: 300px;
+    margin: 10px auto 30px;
+}
+/*社区动态*/
+.news{
+    width: 1200px;
+    height: 610px;
+    margin: 0 auto;
+}
+.title{
+    width: 100%;
+    height: 100px;
+    background: url(../images/news.png) no-repeat center center;
+}
+.news .news_tab{
+    width: 580px;
+    height: 40px;
+    margin: 20px auto;
+}
+.news .news_tab ul li{
+    float: left;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 8px;
+    text-align: center;
+    color: #fff;
+    background: #aaa;
+    cursor: pointer;
+}
+.news .news_tab ul li.now{
+    background: #e12924;
+}
+.news .news_con_box{
+    height: 400px;
+}
+.news .news_con_box .news_con_2,.news_con_3,.news_con_4,.news_con_5{
+    display:none;
+}
+.news .item{
+    width: 1200px;
+    height: auto;
+    display: none;
+}
+.news .news_con_box .show{
+    display: block;;
+}
+.news_con_1 .con_list{
+    overflow:hidden;
+    margin-bottom: 10px;
+}
+.news_con_1 .con_list .con_list_1{
+    float: left;
+    width: 100px;
+    height: 125px;
+    padding-left: 30px;
+    background: url(../images/garden_bg.png) no-repeat left 5px;
+}
+.news_con_1 .con_list .con_list_2{
+    float: left;
+    width: 700px;
+    height: 125px;
+}
+.news_con_1 .con_list .con_list_2 p{
+    font-size: 12px;
+}
+.news_con_1 .con_list .con_list_3{
+    float: right;
+    width: 230px;
+    height: 125px;
+}
+.news .news_con_2 li{
+    overflow: hidden;
+    height: 36px;
+    line-height: 36px;
+}
+.news .news_con_2 li a {
+    display: inline-block;
+    width: 1000px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 30px;
+    background: url(../images/garden_bg.png) no-repeat left 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+.news .news_con_2 li span{
+    float: right;
+}
+/*居委会工作人员*/
+.people_warp{
+    width: 100%;
+    height: 360px;
+    background: #e12924;
+}
+.people_warp .peolpe{
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+}
+.people_title{
+    background: url(../images/people.png) no-repeat center center;
+    padding-top: 10px;
+}
+.people_list{
+    width: 1090px;
+    height: 150px;
+    margin: 30px auto ;
+    padding: 0 30px;
+    position: relative;
+
+}
+.people_list .img_list{
+
+    position: relative; 
+    height: 150px; 
+    width:1090px;
+    overflow: hidden;
+}
+.people_list ul{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.people_list ul li {
+    float: left;
+    width: 180px;
+    height: 150px;
+    margin: 0 19px ;
+}
+.people_list .arrow{
+    width: 27px;
+    height: 69px;
+    position: absolute;
+    top: 40px;
+    background: url(../images/left_arrow.png) no-repeat center center;
+}
+
+.people_list .left_arrow{
+    left:0px;
+}
+.people_list .right_arrow{
+    background: url(../images/right_arrow.png) no-repeat center center;
+    right: 0px;
+}
+/*便捷通道*/
+.icon{
+    width: 1200px;
+    height: 350px;
+    margin: 0 auto;
+}
+.icon .icon_title{
+    padding-top: 20px;
+    background: url(../images/icon.png) no-repeat center center;
+}
+.icon .icon_box{
+    overflow: hidden;
+    padding: 30px 100px 0px 100px;
+}
+.icon .icon_box li{
+    width: 150px;
+    height: 202px;
+    float: left;
+    text-align: center;
+    margin: 0 50px;
+}
+/*友情链接*/
+.link_wrap{
+    width: 100%;
+    height: 280px;
+    background: #e12924;
+}
+.link{
+    width: 1200px;
+    height: 220px;
+    margin: 0 auto ;
+}
+.link_title{
+    background: url(../images/link.png) no-repeat center center;
+    padding-top: 10px;
+}
+.link .link_list{
+    overflow: hidden;
+    margin: 20px 0;
+}
+.link ul li{
+    float: left;
+    width: 200px;
+    height: 71px;
+    margin-right: 50px;
+}
+.link .link_list .margin_right_n{
+    margin-right: 0;
+}
+/*版权*/
+.footer_wrap{
+    width: 100%;
+    height: 300px;
+    padding-top: 30px;
+    background: #000;
+}
+.footer{
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+.footer_left{
+    float: left;
+    width: 490px;
+    color: #fff;
+}
+.footer_right{
+    float: right;
+}
+.footer_left .footer_left_top{
+    width: 490px;
+    height: 200px;
+}
+.footer_left .footer_left_top li{
+    float: left;
+    width: 240px;
+    height: 170px;
+    border-right: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+    padding-top:30px ;
+}
+.footer_left .footer_left_top li h3{
+    padding: 20px 20px 0 20px;
+}
+.footer_left p{
+    height: 32px;
+    line-height: 32px;
+}
+.footer_right{
+    float: right;
+    width: 300px;
+    height: auto;
+    padding-top: 30px;
+}
+.footer_right ul li {
+    float: left;
+}
+.footer_right li.app{
+    margin-right: 20px;
+}

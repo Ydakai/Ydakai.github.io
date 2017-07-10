@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+/*======== 全局 ========*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; border:none;}
+body { font-size:12px; color:#585858; font-family:Verdana, Microsoft YaHei, Simsun; background:#f0f0f0; line-height:24px; }
+fieldset, img { border:0; }
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+em { font-style:normal; }
+input, button, select, textarea { border:none; outline:none; } 
+textarea { resize:none; } /*禁用了文本的拖拉，尤其在谷歌下*/
+p{ text-align:justify; text-justify:distribute;} /*为了使文本段落左右两边对齐*/
+/*======== Link ========*/
+a { color: #585858; text-decoration:none; }
+a:hover { color: #12b5b2; text-decoration:none; }
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+
+.f_l{ float:left;}
+.f_r{ float:right;}  
+
+
+/*头部*/
+.public_header{ width:100%; height:32px; background:#fff;}
+.wrap{ width:1190px; height:32px; margin:0 auto;}
+.day{ color:#333;float: left;line-height: 32px;}
+.header p b{float: left;margin-right: 15px;}
+.scroll{float: left;line-height: 32px;width: 445px;height: 32px; margin-left:20px; color:#333;}
+.sc{ float:right; line-height:32px;}
+
+.header{ width:100%; height:155px; background:url(../images/header_bg.jpg) no-repeat center center;}
+.header .header_logo{ width:1200px; height:100px; margin:0 auto; padding-top:55px;}
+/*导航*/
+.nav_wrap{ width:100%; height:40px; background:#12b5b2; position:relative; z-index:10;}
+.nav{ width:1200px; height:40px; margin:0 auto;}
+.nav li{ float:left; width:120px; height:40px; text-align:center; background:#12b5b2;}
+.nav li.cur{background:#eea821; }
+.nav li:hover{ background:#eea821;}
+.nav li a{ display:inline-block; width:120px; height:40px; font-size:16px; color:#fff;line-height:40px;}
+.nav .m_ul{ overflow:hidden; display:none;}
+.nav .m_ul li{ width:100%; height:40px; border-bottom:1px solid #fff;}
+.nav .m_ul li a{ width:100%; height:40px; line-height:40px; text-align:center; background:#12b5b2;}
+.nav .m_ul li a:hover{ background:#eea821;}
+
+/*main*/
+/*banner*/
+.main{ width:1200px; height:auto; margin:20px auto;}
+.main01{ width:100%; height:auto; overflow:hidden;}
+.banner{ width:560px; height:310px; border:1px solid #dedede; position:relative; overflow:hidden; margin-right:20px;}
+.banner ul{ width:4000px; height:310px; position:relative;}
+.banner ul li{ width:560px; height:310px; float:left; position:relative;}
+.shadow_wrap{ width:100%; height:40px; line-height:40px; font-size:16px; color:#fff; position:absolute; bottom:0; left:0; text-indent:2em;}
+.shadow{ width:100%; height:100%; background:#000;filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5; opacity: 0.5;}
+.shadow_con{ width:380px; height:100%; position:absolute; left:0; top:0; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.banner ol{ position:absolute; z-index:2; right:10px; bottom:10px;}
+.banner ol li{width: 20px; height: 20px; line-height:20px; border:1px solid #fff; float:left; margin: 0 0 0 10px; text-align:center; background: #333; color: #999; cursor: pointer;}
+.banner ol li.current{ border:1px solid #f60; color:#f60; }
+/*社区动态*/
+.new{ width:450px; height:290px; background:#fff; padding:10px;}
+.new_title{ overflow:hidden; border-bottom:1px solid #12b5b2;}
+.new_title h4{ float:left; padding: 0 10px;   height:40px; line-height:40px; font-size:14px; font-weight:700; color:#424242; background:url(../images/left_bg.jpg) no-repeat left center; }
+.more{ float:right; color:#999; line-height:40px;}
+.dongtai_content{ clear:both; margin-top:5px;}
+.dongtai_content ul li{ width:440px; height:38px; line-height:38px; padding-left:10px; background:url(../images/dian_1.png) no-repeat left center;}
+.dongtai_content ul li a{ float:left; width:350px; font-size:14px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.dongtai_content ul li span{ float:right; color:#999; width:75px;}
+/*二维码*/
+.erweima{ width:110px; height:290px; background:#fff; padding:10px;}
+.erweima dl{ width: 110px; height:140px; }
+.erweima dl dd{ width:110px; height:24px; line-height:24px; text-align:center; font-size:14px;}
+
+/*百姓风采*/
+.main03{ width:100%; height:340px;}
+.main03_left{ width:830px; height:340px;}
+.fc{ width:375px; height:230px; background:#fff; padding:10px; margin-right:20px; margin-bottom:20px;}
+.fc .dongtai_content ul li{ width:365px;}
+.fc .dongtai_content ul li a{ width:280px;}
+/*周边商家*/
+.sj{ width:350px; height:320px; background:#fff; padding:10px;}
+.sj_icon{ padding:20px 10px;}
+.sj_icon a{ float:left; width:110px; height:90px;}
+.sj_icon a dl{ text-align:center;}
+
+/*党建活动、党建学习*/
+.main04,.main05{ margin:20px 0; overflow:hidden;}
+.main04 .dj{ width:385px; height:250px; background:#fff; padding:0 10px 0 0; margin-right:20px;}
+.main04 .dj .new_title{border-bottom:1px solid #cb0d0d;}
+.main04 .dj .more{ line-height:32px;}
+.main04 .new_title h4{  background:url(../images/dj_bg.jpg) no-repeat left; height:32px; line-height:32px; color:#fff; padding-left:35px;}
+.dj .dj_con{ padding-left:10px; margin-top:5px;}
+.dj .dj_con ul li{ width:365px; height:38px; line-height:38px; padding-left:10px; background:url(../images/dian_2.jpg) no-repeat left center;}
+.dj .dj_con ul li a{ float:left; width:280px; font-size:14px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.dj .dj_con ul li span{ float:right; color:#999; width:75px;}
+.dj .dj_con .ll{ float:right; color:#fcd804; font-size:14px; background:url(../images/chakan.png) no-repeat left center; width:60px; padding-left:15px; overflow:hidden;}
+.link_icon{ float:right; width:370px; height:250px;}
+.link_icon ul li{ width:370px; height:70px; float:left; margin-bottom:20px;}
+
+/*智慧服务*/
+.main05 .fw{ width: 790px; height:390px;  padding:0 10px 10px 10px; margin-right:20px; background:#fff;}
+.icon{ padding:30px 20px; clear:both; overflow:hidden;}
+.icon dl{ width:110px; height:140px; }
+.icon dl dd{ font-size:14px; width:110px; height:24px; line-height:24px; text-align:center;}
+.icon a{ float:left; margin:0 35px;}
+.zcfg{ width:370px; height:400px; background:#fff;}
+.zcfg .tab_title{ width:470px; height:40px; line-height:40px; border-bottom:1px solid #12b5b2; text-align:center; font-size:14px; font-weight:700;}
+.zcfg .tab_title ul li{ float:left; width:86px; height:40px; background:#ebebeb; cursor:pointer;}
+.zcfg .tab_title ul li.curr{ background:#12b5b2;}
+.zcfg .tab_title ul li.curr a{ color:#fff;}
+.zcfg .tab_con{ width:350px; height:auto; padding:0 10px; display:none;}
+.zcfg .tab_con ul li{ width:340px;}
+.zcfg .tab_con ul li a{ width:260px;}
+
+
+/*居委会工作人员*/
+.people{ width:1180px; height:auto; background:#fff; padding:0px 10px 10px; margin:20px 0; overflow:hidden;} 
+.people_img{ width:1180px; float:left; overflow:hidden;}
+.people_img_box{ width:800%; overflow:hidden;}
+.pic_box{ overflow:hidden; margin-top:10px; float:left;}
+.pic_box .pic{ width:147px;float:left;text-align:center;}
+.pic_box .pic img{display:block;margin:0 auto;}
+
+/*社区活动*/
+.huodong{ width:1180px; height:220px; background:#fff; padding:0 10px;}
+.huodong .bd{width:1140px; height:160px; margin:0 auto; overflow:hidden; }
+.huodong .bd ul{ width:300%;}
+.huodong .bd ul li{ float:left; width:175px; text-align:center; padding-right:18px;}
+.huodong .bd .title a{ display:block; width:175px; height:32px; line-height:32px; text-align:center;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.hd_prev,.hd_next{width:12px; height:31px; position:absolute; top:60px; background:url(../images/left_pic.png) no-repeat; cursor:pointer;}
+.hd_prev{ left:5px; }
+.hd_next{ right:5px; background-image:url(../images/right_pic.png);}
+.roll_box{width:100%; height:auto; overflow:hidden; position:relative; padding:10px 0;}
+
+
+/*友情链接*/
+.lianjie{ height:70px; width:1180px; margin:20px auto; padding:0 10px; background:#fff; } 
+.lianjie h4{ float:left; font-size:14px; font-weight:700; line-height:70px; background:url(../images/left_bg.jpg) no-repeat left center; padding-left:10px;}
+.lianjie select{ width:200px; height:30px; line-height:30px; border:1px solid #dedede; margin-left:65px; margin-top:20px;}
+.lianjie select option{ width:100%; height:40px;}
+
+/*版权信息*/
+.footer_wrap{ width:100%; height:150px; background:#f0f0f0; border-top:2px solid #12b5b2;}
+.footer{ width:1190px; height:130px; margin:0 auto; padding-top:20px;}
+.footer p{ height:40px; line-height:40px; text-align:center; font-size:14px;}
+.footer p a{ color:#12b5b2;}

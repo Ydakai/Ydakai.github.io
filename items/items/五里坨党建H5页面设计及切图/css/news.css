@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.news_index .news_list li a {
+	float: left;
+	width: 100%;
+	height:40px;
+	line-height:40px;
+	color:#666666;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	font-size:12px;
+}
+
+.news_index .news_list li span{
+	float:right;
+	font-size:12px;
+	color:#999;
+	height:24px;
+	line-height:24px;
+	}
+
+.news_index .news_list li{
+	width:100%;
+	float:left;
+	border-bottom:1px dashed #dedede;
+}
+
+.news_view {
+	padding: 10px;
+	width: 100%;
+	text-align: justify;
+}
+.news_view h1 {
+	font-size: 20px;
+	line-height: 30px;
+	color: #C50206;
+	text-align: center;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.news_tags {
+	line-height: 30px;
+	font-size: 12px;
+	color: #666666;
+	text-align:center;
+}
+.news_tags span {
+	text-align: center;
+	margin-right: 3%;
+}
+
+
+.news_content {
+	font-size: 14px;
+	color: #666666;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #D9D9D9;
+	line-height: 24px;
+}
+
+.news_content .news_title_img{
+	width:100%;	
+	text-align:center;
+	
+}
+
+.news_content p {
+	margin: 0px;
+	text-indent:2em;
+}
+
+.news_content img {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.news_content .news_title_img img{
+	max-width:100%;	
+}
+
+.news_more {
+	line-height: 30px;
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+}
+.news_more .news_next {
+	float: left;
+	width: 100%;
+	margin-bottom: 5px;
+}
+.news_more span {
+	float: left;
+	color: #666666;
+	font-size: 13px;
+}
+
+.news_more  a {
+	font-size: 13px;
+	color: #666666;
+	text-decoration: none;
+	margin-right: 10px;
+	float: left;
+}
+
+.news_index .table_df{
+	width:100%;
+	text-align:center;
+	margin-top:15px;
+}
+
+.news_index .table_df th,.news_index .table_df td{
+	border:1px solid #dedede;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:12px; 
+	font-weight:normal;
+}
+
+.news_index .shenbao,.baoliao .liuyan{
+	width:100%;
+	padding:8px 0;
+	background:#ffc26a;
+	display:block;
+	font-size:12px;
+	text-align:center;
+	color:#fff;
+	margin-top:10px;
+	}
+
+
+.page{
+	 margin:20px auto; 
+	 text-align:center; 
+	 overflow:hidden; 
+	 width:100%;
+}
+.page a{
+	padding:10px 3%;
+	margin:0;
+	width:30%;
+	line-height:24px;
+	margin:0 2%;
+	text-align: center; 
+	border-radius:5px;
+}
+.news_index h4{
+	font-size:12px;
+	font-weight:normal;
+	height:30px;
+	line-height:30px;
+	margin-top:10px;
+}
+
+.lincoapp-list-imgs{background:#fff; border-bottom:1px solid #dedede;margin-bottom:10px;float:left;}
+.lincoapp-list-imgs .video{position:relative;display:block;}
+.lincoapp-list-imgs .video .v_play{ }
+.lincoapp-list-imgs .video .v_play img{border-left: solid 1px rgba(0,0,0,0.2); border-right: solid 1px rgba(0,0,0,0.2); border-top: solid 1px rgba(0,0,0,0.2);border-bottom: solid 1px rgba(0,0,0,0.2); background-color: #FFFFFF; padding: 3px; width: 100%;display: block;overflow: hidden;}
+.lincoapp-list-imgs .video .img{width:100%;vertical-align:top}
+.lincoapp-list-imgs .vcount{position:absolute;right:20px;bottom:10px;display:block;background:rgba(0,0,0,.4);height:25px;padding:0 10px;line-height:25px;color:#fff;-webkit-border-radius:12px;-moz-border-radius:12px;border-radius:12px;font-size:11px;}
+.lincoapp-list-imgs .vcount:before{content:'';display:inline-block;width:12px;height:12px;background:url(../images/chakan.png) no-repeat; background-size:12px 12px; vertical-align:-2px;}
+.lincoapp-list-imgs .vstitle{margin:20px 0px 10px;font-size:12px;color:#888;}
+.lincoapp-list-imgs .vtitle{padding-top:10px;margin:0 0 10px;line-height:24px;font-size:14px;color:#333333;}
+.lincoapp-list-imgs .vtitle a{ color:#333;} 
+.lincoapp-list-imgs .vcon p{margin:0 0 10px;line-height:20px;font-size:12px;color:#333; text-indent:2em;}
+.lincoapp-list-imgs .vinfo{ height:45px; line-height:45px; border-top:1px solid #dedede; font-size:12px;}
+.lincoapp-list-imgs .vinfo span{ float:left; width:50%; text-align:center;}
+.dk_more{ background:#fff;}
+
+.xd_comment{ margin:0 0 20px 0;}
+.xd_list_title { border-top: 2px solid #dedede ;height: 36px;line-height: 36px;
+margin-top: 5px; clear: both; margin-bottom:10px;}
+.xd_list_title b { padding: 0 10px;font-size: 14px; border-top: 2px solid #f50; position: relative;top: -2px; font-weight: 500; display: inline-block; float: left; width: auto;}
+.xd_comment h2 span{ font-weight:400; float:right; font-size:12px;}
+.xd_comment .comment_input{ width:98%; height:120px; border:1px solid #dedede;}
+.xd_comment p.xz{ color:#ccc; height:30px; line-height:30px; font-size:12px;}
+.xd_comment .sc_fj{ width:100px; height:30px; display: inline-block; background: #0075d8; position: relative; border: 1px solid #dedede; }
+.xd_comment .sc_fj span { display: block;font-size: 12px;text-align: center; color: #fff; line-height:30px;}
+.xd_comment .input_file{ width:100px; height:30px; cursor:pointer; position:absolute; top:0; left:0; filter:alpha(opacity=0); -moz-opacity:0; opacity:0; }
+.xd_comment .xd_tj{ width:100px; height:30px; color:#fff; border:none; background:#ff0000; float:right; margin:10px 0;}
+.xd_list .list_item{ overflow:hidden; padding:13px 0 ; border-bottom:1px dashed #dedede;}
+.xd_list .list_item .user_photo{ width:10%; float:left; }
+.xd_list .list_item .xd_con{ width:88%;  float:right;}
+.xd_list .list_item .xd_con .ueser_name{ color:#446c88; }
+.fj{ color:#00F;}
+.checkbox{ height:40px; line-height:40px;}
+.checkbox span input{ vertical-align:-2px;}

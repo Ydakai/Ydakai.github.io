@@ -1,0 +1,123 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="applicable-device" content="mobile" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>五里坨党建云平台-投票调查</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/baoliao.css" />
+<link rel="stylesheet" href="css/news.css" />
+<link rel="stylesheet" href="css/login.css" />
+<link rel="stylesheet" href="css/user.css" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+</head>
+
+<body>
+<div class="mobile">
+  <!--header 开始-->
+  <header>
+    	<a class="new-a-back" href="#"> <span><img src="images/iconfont-fanhui.png"></span> </a>
+      <h2>投票调查</h2>
+  </header>
+  <!--header 结束-->
+
+  <div class="baoliao w">
+            	<div class="vote_title">
+                	<h3>您认为教育实践活动</h3>
+                  	<h5>用科学的理论武装教育人，是党的思想理论建设的根本任务，面对新形势、新任务，加强理论学习，自觉运用科学发展观指导实践，比以往任何时候都更为重要、更为紧迫。因此，作为一名党员干部，要充分认识加强理论学习、提高理论水平的重要性，自觉加强理论学习，切实提高执政能力，进一步增强党的领导核心作用。</h5>             
+              	</div>
+                <div class="vote_img">
+           	    	<img src="images/dc.jpg"/> 
+                </div>
+   			  	<div class="vote_body">
+                	<div class="vote_body_con">
+                    	<div class="paty">
+                            <h4 class="title">1、您认为教育实践活动</h4>
+                            <ul class="options">
+                                <li>
+                                    <input type="radio" id="i_1" name="n_1"/>
+                                    <label for="i_1">推动了党员干部作风的转变</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="i_2" name="n_1"/>
+                                    <label for="i_2">让群众得到了实惠</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="i_3" name="n_1"/>
+                                    <label for="i_3">严格了批评和自我批评等党内政治生活准则</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="i_4" name="n_1"/>
+                                    <label for="i_4">加强了基层组织建设</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="i_5" name="n_1"/>
+                                    <label for="i_5">其他</label>
+                                    <input type="text" class="vote_text" />
+                                
+                                </li>
+                            </ul>
+                         </div>
+                        <div class="paty">
+                            <h4 class="title">2、您认为教育实践活动</h4>
+                            <ul class="options">
+                                <li>
+                                    <input type="checkbox" id="i_6" name="n_2"/>
+                                    <label for="i_6">推动了党员干部作风的转变</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i_7" name="n_2"/>
+                                    <label for="i_7">让群众得到了实惠</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i_8" name="n_2"/>
+                                    <label for="i_8">严格了批评和自我批评等党内政治生活准则</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i_9" name="n_2"/>
+                                    <label for="i_9">加强了基层组织建设</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="i_10" name="n_2"/>
+                                    <label for="i_10">其他</label>
+                                    <input type="text" class="vote_text"/>
+                                </li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+                <div class="vote_footer">
+                	<input type="button" value="提交" class="submitbtn" />
+                    <input type="button" value="查看结果" class="resultbtn"/>
+                </div>
+    
+    
+     	
+  </div>
+  
+	<div class="footer_footer"></div>
+	<div class="gotop backtop" style="display:none;"></div>
+    
+</body>
+</html>
+<script type="text/javascript">
+//返回顶部
+$(document).ready(function(){
+	$(window).scroll(function () {
+		var scrollHeight = $(document).height();
+		var scrollTop = $(window).scrollTop();
+		var $windowHeight = $(window).innerHeight();
+		scrollTop > 75 ? $(".gotop").fadeIn(200).css("display","block") : $(".gotop").fadeOut(200).css({"background-image":"url(images/iconfont-fanhuidingbu.png)"});
+	});
+	$('.backtop').click(function (e) {
+		$(".gotop").css({"background-image":"url(images/iconfont-fanhuidingbu_up.png)"});
+		e.preventDefault();
+		$('html,body').animate({ scrollTop:0});
+	});
+});
+</script>
